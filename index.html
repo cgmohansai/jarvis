@@ -1,4 +1,3 @@
-c:\Users\mohan\Desktop\usersai\jarvis-project
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,6 @@ c:\Users\mohan\Desktop\usersai\jarvis-project
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <!-- Custom styles -->
   <style>
     body {
       font-family: 'Source Code Pro', monospace;
@@ -32,7 +30,6 @@ c:\Users\mohan\Desktop\usersai\jarvis-project
   </style>
 </head>
 <body class="bg-black text-white font-sans overflow-x-hidden">
-  <!-- Rest of your index.html content remains the same -->
   <!-- Header -->
   <header class="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-md py-4 px-6 flex justify-between items-center">
     <a href="index.html">
@@ -45,72 +42,120 @@ c:\Users\mohan\Desktop\usersai\jarvis-project
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <div class="relative h-screen overflow-hidden flex items-center justify-center pt-24">
-    <div class="absolute inset-0 flex">
-      <div class="w-1/2 h-full bg-gradient-to-r z-10"></div>
-      <div class="w-1/2 h-full bg-gradient-to-l z-10"></div>
-    </div>
-
-    <img src="assets/image6.PNG" id="left-image" class="absolute left-0 top-0 w-1/2 h-full object-cover transform -translate-x-1/2 opacity-0 z-0" />
-
-    <div class="absolute z-6 grid grid-cols-1 md:grid-cols-2 items-center px-0 md:px-16 w-full">
-      <div id="jarvis-content" class="opacity-0 transition-opacity max-w-xl md:-ml-0 top-1/3 left-1/2 transform -translate-x-1">
+  <!-- Main Container -->
+  <div class="flex flex-col md:flex-row min-h-screen pt-32 pb-16 bg-black max-w-7xl mx-auto">
+    <!-- Left: Jarvis Container with Fixed Images -->
+    <div class="relative w-full md:w-1/2 min-h-[400px] md:min-h-full flex items-center justify-center">
+      <img src="assets/image7.PNG" id="left-image" class="absolute left-0 top-0 w-full h-full object-cover transform -translate-x-1/2 opacity-60 z-0 transition-all duration-700" />
+        <div class="absolute z-10 flex items-center justify-center h-full w-full px-6 md:px-16">
+<div id="jarvis-content" class="transition-opacity max-w-xl text-left mx-auto top-1/4 md:top-15 left-1/4 -translate-x-1/2 fixed">
   <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text bg-gradient-to-r text-white">JARVIS</h1>
   <p class="text-xl md:text-2xl mb-10 text-gray-300">Joint AI, Research, Virtual network, IoT & Electronics</p>
   <a href="contact.html">
-    <button class="px-8 py-4 bg-gradient-to-r  to-gray-800 rounded-full text-lg font-medium hover:opacity-90 transition-opacity">
+    <button class="px-8 py-4 bg-gradient-to-r from-black to-gray-800 rounded-full text-lg font-medium hover:opacity-90 transition-opacity">
       Get Started
     </button>
   </a>
 </div>
-
-      <img src="assets/image5.PNG" id="right-image" class="absolute right-0 top-0 w-1/2 h-full object-cover transform -translate-x-1/2 opacity-0 z-0" />
-
-      <div class="relative top-1/2 right-0 -translate-y-1/2 -translate-x-1/3 w-[300px] md:w-[400px] text-right text-white border border-white/20 bg-white/10 backdrop-blur-md rounded-xl p-6 z-50">
-        <h2 class="text-2xl font-semibold mb-4">Who We Are</h2>
-        <p class="text-sm md:text-base text-gray-200">At JARVIS, we are a team of passionate creatives dedicated to craft our unique journeys to empower and unite students interested in Artificial Intelligence, Robotics, Programming, Innovation, and System Design, fostering collaboration, research, practical skill-building, and interdisciplinary innovation among students of the IITM BS program.</p>
       </div>
+    </div>
+    <!-- Right: Scrollable Content -->
+    <div class="md:w-1/2 w-full flex flex-col space-y-12 px-4 md:px-12 justify-start">
+      <!-- Who We Are Section at the top right -->
+      <section class="bg-gradient-to-br from-black/70 to-gray-800/80 border border-white/20 backdrop-blur-md rounded-xl p-8 shadow-lg mt-0">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-blue-300">Who We Are</h2>
+        <p class="text-base md:text-lg text-gray-200 leading-relaxed">
+          JARVIS is a vibrant community of innovators, uniting students passionate about Artificial Intelligence, Robotics, Programming, and System Design. We empower IITM BS students through collaboration, hands-on projects, and interdisciplinary research—turning ideas into impactful realities.
+        </p>
+      </section>
+      <!-- Future Works Section below Who We Are -->
+      <section class="relative bg-gray-900 p-10 rounded-xl overflow-hidden shadow-lg">
+        <div class="absolute inset-0">
+          <img src="assets/image2.PNG" class="w-full h-full object-cover opacity-30" alt="Background Image" />
+        </div>
+        <div class="relative z-10">
+          <div class="text-center">
+            <h2 class="text-4xl font-bold mb-8">Future Works</h2>
+            <div class="mb-6">
+              <a href="future_works/VR-Based-Phobia-Therapy.html" class="text-2xl font-semibold mb-2 hover:text-blue-400 transition">VR BASED PHOBIA THERAPY</a>
+              <p class="text-gray-400">Industry: Speakeasy Bar</p>
+            </div>
+            <div class="mb-6">
+              <a href="future_works/Cyber-Intrusion-Pattern-Indentifier.html" class="text-2xl font-semibold mb-2 hover:text-blue-400 transition">CYBER INTRUSION PATTERN IDENTIFIER</a>
+              <p class="text-gray-400">Industry: Cybersecurity</p>
+            </div>
+            <div class="mb-6">
+              <a href="future_works/AI-Based-NPC-Emotion-Engine.html" class="text-2xl font-semibold mb-2 hover:text-blue-400 transition">AI-BASED NPC EMOTION ENGINE</a>
+              <p class="text-gray-400">Industry: Game Development</p>
+            </div>
+            <div class="mb-6">
+              <a href="future_works/CryptoBio.html" class="text-2xl font-semibold mb-2 hover:text-blue-400 transition">CRYPTOBIO</a>
+              <p class="text-gray-400">Industry: Lifestyle</p>
+            </div>
+            <div>
+              <a href="future_works/AR-Telemedicine-Diagnostic-Tool.html" class="text-2xl font-semibold mb-2 hover:text-blue-400 transition">AR Telemedicine Diagnostic Tool</a>
+              <p class="text-gray-400">Industry: MedTech</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+<div class="md:flex md:w-1/10 min-h-[400px] md:min-h-full items-center justify-center relative right-1000 top-0 h-full z-20">
+  <div class="w-full max-w-md mx-auto rounded-xl overflow-hidden shadow-lg relative">
+    <!-- Dimness overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40 pointer-events-none z-10"></div>
+    <img id="slideshow-image" src="assets/image1.PNG" alt="Slideshow" class="w-full h-80 object-cover transition-opacity duration-700 opacity-100 relative z-0" />
+  </div>
+</div>
+      </section>
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="py-20 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-30">
-    <!-- Left Column for Image -->
-    <div class="flex justify-center items-center">
-      <img src="assets/image6.PNG" id="left-image" class="w-full max-w-md rounded-lg" alt="Jarvis Image" />
-    </div>
 
-    <!-- Right Column with Background Image -->
-    <div class="relative bg-gray-900 p-15 rounded-xl overflow-hidden">
-      <div class="absolute inset-0">
-        <img src="assets/image7.PNG" id="right-image" class="w-full h-full object-cover opacity-30" alt="Background Image" />
-      </div>
-      <div class="relative z-10">
-        <h2 class="text-4xl font-bold mb-6 text-right">Future Works</h2>
-        <div class="mb-6">
-          <a href="future_works/VR-Based-Phobia-Therapy.html" class="text-2xl font-semibold mb-3 text-right hover:text-blue-400 transition">VR BASED PHOBIA THERAPY</a>
-          <p class="text-gray-400 text-right">Industry: Speakeasy Bar</p>
-        </div>
-        <div class="mb-6">
-          <a href="future_works/Cyber-Intrusion-Pattern-Indentifier.html" class="text-2xl font-semibold mb-3 text-right hover:text-blue-400 transition">CYBER INTRUSION PATTERN IDENTIFIER</a>
-          <p class="text-gray-400 text-right">Industry: Cybersecurity</p>
-        </div>
-        <div>
-          <a href="future_works/AI-Based-NPC-Emotion-Engine.html" class="text-2xl font-semibold mb-3 text-right hover:text-blue-400 transition">AI-BASED NPC EMOTION ENGINE</a>
-          <p class="text-gray-400 text-right">Industry: Game Development</p>
-        </div>
-        <div>
-          <a href="future_works/CryptoBio.html" class="text-2xl font-semibold mb-3 text-right hover:text-blue-400 transition">CRYPTOBIO</a>
-          <p class="text-gray-400 text-right">Industry: Lifestyle</p>
-        </div>
-        <div>
-          <a href="future_works/AR-Telemedicine-Diagnostic-Tool.html" class="text-2xl font-semibold mb-3 text-right hover:text-blue-400 transition">AR Telemedicine Diagnostic Tool</a>
-          <p class="text-gray-400 text-right">Industry: MedTech</p>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <script>
+    // Simple JS Slideshow
+    const images = [
+      "assets/image1.PNG",
+      "assets/image3.PNG",
+      "assets/image4.PNG",
+      "assets/slide-4.PNG",
+      "assets/slide-5.PNG",
+    ];
+    let current = 0;
+    const imgEl = document.getElementById('slideshow-image');
+    const dots = document.querySelectorAll('.slideshow-dot');
+
+    function showSlide(idx) {
+      imgEl.style.opacity = 0;
+      setTimeout(() => {
+        imgEl.src = images[idx];
+        imgEl.style.opacity = 1;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('bg-white/60', i === idx);
+          dot.classList.toggle('bg-white/30', i !== idx);
+        });
+      }, 300);
+      current = idx;
+    }
+
+    let interval = setInterval(() => {
+      showSlide((current + 1) % images.length);
+    }, 2500);
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        clearInterval(interval);
+        showSlide(idx);
+        interval = setInterval(() => {
+          showSlide((current + 1) % images.length);
+        }, 2500);
+      });
+    });
+
+    // Initial state
+    showSlide(0);
+  </script>
 
   <!-- New Section Above Footer -->
   <div class="py-10 text-center">
